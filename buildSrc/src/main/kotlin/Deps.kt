@@ -71,6 +71,11 @@ object Deps{
 
     object Coroutines{
         const val coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Version.coroutines}"
+        const val core = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Version.coroutines}"
+    }
+
+    object JavaX {
+        const val inject = "javax.inject:javax.inject:1"
     }
 
     object ViewBidningProperty{
@@ -96,10 +101,15 @@ object Plugins{
     object Kotlin{
         const val android = "org.jetbrains.kotlin.android"
         const val kapt = "kotlin-kapt"
+        const val jvm = "org.jetbrains.kotlin.jvm"
     }
 
     object DaggerHilt{
         const val hilt = "com.google.dagger.hilt.android"
+    }
+
+    object Java{
+        const val library = "java-library"
     }
 
 

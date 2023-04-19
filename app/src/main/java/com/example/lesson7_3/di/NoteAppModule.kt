@@ -31,6 +31,6 @@ object NoteAppModule {
 
     @Provides
     fun provideNoteRepository(noteDao: NoteDao): NoteRepository {
-        return  NoteRepositoryImpl(noteDao)
+        return NoteRepositoryImpl(noteDao)
     }
 }

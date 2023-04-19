@@ -14,3 +14,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Lesson7_3"
 include (":app")
+include(":data3")
+include(":domain2")

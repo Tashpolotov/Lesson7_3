@@ -42,6 +42,9 @@ android {
 
 dependencies {
 
+    implementation(project(":data3"))
+    implementation(project(":domain2"))
+
     implementation(Deps.UI.AndroidKtx.androidKtx)
     implementation (Deps.UI.Appcompat.appCompat)
     implementation (Deps.UI.Material.material)
@@ -70,7 +73,7 @@ dependencies {
     implementation (Deps.Navigation.navigationFragment)
     implementation (Deps.Navigation.navigation)
 
-    implementation(platform(Deps.KotlinBom.kotlinBom))
+    implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.0"))
     // reflection-free flavor
     implementation (Deps.ViewBidningProperty.noreflection)
 

@@ -9,8 +9,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.lesson7_3.databinding.ItemListBinding
 import com.example.lesson7_3.domain.model.Note
 
-class AdapterNotes( private var onClick: (Note) -> Unit,
-                    private var onLongClick: (Note) -> Unit
+class AdapterNotes(private var onClick: (Note) -> Unit,
+                   private var onLongClick: (Note) -> Unit
 ): ListAdapter<Note, AdapterNotes.Holder>(Comparator()) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
